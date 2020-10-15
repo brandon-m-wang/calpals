@@ -1,0 +1,81 @@
+html {
+    font-family: 'Mulish', sans-serif;
+}
+
+body {
+    margin-left: 5%;
+    color: #3d9bc2;
+
+}
+
+/* Section 1 */
+
+.section1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.section1 #cub-logo {
+    width: 30%;
+}
+
+.section1 #title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    font-weight: 800;
+}
+
+
+/* Section 2 */
+
+.section2 #content-blurb {
+    font-size: 24px;
+    border: 1px solid #3d9bc2;
+    border-radius: 30px;
+    padding: 1em;
+    margin-right: 5%;
+    justify-content: center;
+}
+
+/* Section 3 */
+
+.section3 .intro-container {
+    margin-top: 6%;
+}
+
+.section3 .intro-container #us {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.section3 .grid-pic-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 4%;
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.section3 .grid-pic-container .team-member {
+    width: 70%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 100px;
+}
+
+
+/* @media */
+
+@media only screen and (max-width: 650px) {
+    .section1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section1 #cub-logo {
+        width: 70%;
+        justify-content: center;
+    }
+  } 
