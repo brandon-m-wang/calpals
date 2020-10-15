@@ -19,13 +19,13 @@ body {
     left: 0;
     background-color: #F6D9AD; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 10px;
-    padding-bottom: 20px;
+    padding: 10px 30px 30px 30px;
+    
 }
   
   /* The navigation menu links */
 .sidenav a {
-    padding: 0px 18px 0px 30px;
+    padding: 0px 18px 0px 10px;
     text-decoration: none;
     font-size: 18px;
     font-family: 'Mukta', sans-serif;
@@ -38,12 +38,23 @@ body {
 }
 
 
+.side_subheadings{
+    font-weight: bold;
+    padding: 0px 0px 0px 0px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Mukta', sans-serif;
+    color: #635B5B;
+    display: block;
+}
+
 .side_title {
     background-color: #E7B873;
-    width: 80%;
+    width: 100%;
     border: 15px;
-    padding: 8px 5px 8px 15px;;
-    margin: 25px 25px 15px 25px;
+    padding: 5px 5px 5px 10px;;
+    margin: 25px 0px 15px 0px;
     font-family: 'Patua One', cursive;
     color: #FAF2C5;
     font-size: 28px;
@@ -58,12 +69,12 @@ body {
   /* Style the search field */
   form.example input[type=text] {
     padding: 10px;
-    margin: 0px 0px 0px 25px;
+    margin: 0px 0px 0px 0px;
     font-size: 14px;
     border: 1px solid #CDCDCD;
     border-right: none;
     float: left;
-    width: 65%;
+    width: 85%;
     height: 30px;
     background: #F8F0E4;
     color: #d4d4d4;
@@ -90,7 +101,7 @@ body {
     width: 15%;
     height: 30px;
     padding: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     background: #e6a33e;
     color: white;
     border: none;
@@ -117,7 +128,7 @@ body {
     display: block;
     position: relative;
     padding-left: 35px;
-    margin: 5px 20px 5px 30px;
+    margin: 5px 0px 5px 0px;
     color: #635B5B;
     cursor: pointer;
     font-size: 18px;
@@ -187,8 +198,8 @@ body {
 /* Solid border for divider */
 hr.solid {
     border-top: 0.1em solid #FAF2C5;
-    width:80%;
-    margin: 5px 25px 5px 25px;
+    width:100%;
+    margin: 5px 0px 5px 0px;
 }
 
   /* Style page content */
@@ -201,6 +212,38 @@ hr.solid {
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+
+
+
+/* log out button */
+
+a.button1{
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.2em solid #e6a33e;
+    margin:1.5em 2em 0.5em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    
+    font-family: 'Mukta', sans-serif;
+    font-weight:900;
+    color:#e6a33e;
+    text-align:center;
+    transition: all 0.2s;
+    }
+a.button1:hover{
+    color:#000000;
+    font-weight:120000;
+    background-color:#FFFFFF;
+    border:0.2em solid #FFFFFF;
+    }
+@media all and (max-width:30em){
+    a.button1{
+    display:block;
+    margin:0.4em auto;
+    }
 }
 
 /* scrollbar */
@@ -225,6 +268,82 @@ hr.solid {
     background: #e6a33e;
   }
 
+
+.content {
+    /* display: flex;
+    flex-direction: row;
+    align-items: center; */
+
+    display:flex; 
+    flex-wrap:wrap; 
+    flex-direction:row;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    justify-content: center;
+    font-family: 'Mukta', sans-serif;
+    color: black;
+    /* position: absolute; */
+    
+   
+}
+
+.content #post {
+    font-size: 18px;
+    justify-content: center;
+    /* word-wrap: break-word;
+    overflow-wrap: break-word; */
+    /* flex:auto auto auto; */
+    width: 350px; 
+    /* width: 350px; */
+    border: 25px solid #FAF2C5;
+    background-color: #FFFDF2;
+    margin: 0px 50px 30px 30px;
+    padding: 20px;
+    color: black;
+}
+
+.content #post-header{
+    font-size: 18px;
+    justify-content: center;
+    /* word-wrap: break-word;
+    overflow-wrap: break-word; */
+    /* flex:auto auto auto; */
+    width: 350px; 
+    
+    margin: 50px 50px 0px 30px;
+    text-align: right;
+    /* width: 350px; */
+    
+    background-color: #A2E1F5;
+    
+    padding: 15px 25px 15px 10px;
+    
+    color: #003262;
+}
+
+.content #post-header a{
+    padding: 5px;
+    text-decoration: underline;
+    text-decoration-color: #5f9fdb;
+    color: #003262;
+    font-weight: 700;
+}
+
+.content #post-header img{
+    float: left;
+    height: 30px;
+    width: auto;
+    padding-left:10px;
+}
+
+.content #rectangle{
+    width:350px;
+    height: 300px;
+    margin-left: 50px;
+    background:#003262;
+    position:relative;
+    
+}
 
 
 /* Section 1 */
