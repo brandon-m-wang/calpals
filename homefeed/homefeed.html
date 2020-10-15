@@ -3,45 +3,109 @@
   <head>
     <link rel="stylesheet" type="text/css" href="./homefeed.css">
     <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <div class='section1'>
-        <img id='cub-logo' src='img/cubstart.png' alt='cubstart logo'>
-        <div id='title'>
-            Time for some CSS practice with CubStart!
-        </div>
+    <!-- Side navigation -->
+    <div class="sidenav">
+        <div class='side_title'>search</div>
+
+        <!-- search in sidebar -->
+        <form class="example" action="action_page.php">
+        <input type="text" placeholder="Interests, hobbies, major..." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+
+        <div>FILTER:</div>
+
+        <!-- filter buttons -->
+        <label class="container">My Friends Only
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+        </label>
+          
+        <label class="container">Same Gender Identity As Me
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+          
+
+        <div>Dates posted:</div>
+
+        <label class="container">From Last 3 Days
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+          
+        <label class="container">From Last Week
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container">From Last Month
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+
+        <div class='side_title'>friends</div>
+        <a href="#">ANGELA ZHANG</a>
+        <hr class="solid">
+        <a href="#">ABBY YU</a>
+        <hr class="solid">
+        <a href="#">BRANDON WANG</a>
+        <hr class="solid">
+        <a href="#">RHONA HUANG</a>
+        <hr class="solid">
+        
+
+        
     </div>
-    <div class='section2'>
-        <div id='content-blurb'>
-            Cubstart is Cal Hacks’ course for beginner hackers. 
-            We provide mentorship for team building, ideation, 
-            basic hackathon skills, and technical workshops to encourage 
-            those with little or no CS experience to try out hackathons and 
-            coding! If you are someone who is passionate about learning and 
-            wants to take a hackathon project from start to finish, Cubstart 
-            is the place for you.
-        </div>
-    </div>
-    <div class='section3'>
-        <div class='intro-container'>
-            <div id='us'>
-                Course staff 
+    
+
+
+    <!-- Page content -->
+    <div class="main">
+
+        <div class='section1'>
+            <img id='cub-logo' src='img/cubstart.png' alt='cubstart logo'>
+            <div id='title'>
+                Time for some CSS practice with CubStart!
             </div>
-            <div id='sub'>
-                according to David who might be wrong
+        </div>
+        <div class='section2'>
+            <div id='content-blurb'>
+                Cubstart is Cal Hacks’ course for beginner hackers. 
+                We provide mentorship for team building, ideation, 
+                basic hackathon skills, and technical workshops to encourage 
+                those with little or no CS experience to try out hackathons and 
+                coding! If you are someone who is passionate about learning and 
+                wants to take a hackathon project from start to finish, Cubstart 
+                is the place for you.
             </div>
         </div>
-        <div class='grid-pic-container'>
-            <img class='team-member' src='img/alexlu.jpg' alt='alexlu'>
-            <img class='team-member' src='img/ali.jpg' alt='ali'>
-            <img class='team-member' src='img/brandon.jpg' alt='brandon'>
-            <img class='team-member' src='img/charles.jpg' alt='charles'>
-            <img class='team-member' src='img/david.png' alt='david'>
-            <img class='team-member' src='img/khushi.jpg' alt='khushi'>
-            <img class='team-member' src='img/pranati.jpg' alt='pranati'>
-            <img class='team-member' src='img/saahil.jpg' alt='saahil'>
-            <img class='team-member' src='img/terrance.png' alt='terrance'>
+        <div class='section3'>
+            <div class='intro-container'>
+                <div id='us'>
+                    Course staff 
+                </div>
+                <div id='sub'>
+                    according to David who might be wrong
+                </div>
+            </div>
+            <div class='grid-pic-container'>
+                <img class='team-member' src='img/alexlu.jpg' alt='alexlu'>
+                <img class='team-member' src='img/ali.jpg' alt='ali'>
+                <img class='team-member' src='img/brandon.jpg' alt='brandon'>
+                <img class='team-member' src='img/charles.jpg' alt='charles'>
+                <img class='team-member' src='img/david.png' alt='david'>
+                <img class='team-member' src='img/khushi.jpg' alt='khushi'>
+                <img class='team-member' src='img/pranati.jpg' alt='pranati'>
+                <img class='team-member' src='img/saahil.jpg' alt='saahil'>
+                <img class='team-member' src='img/terrance.png' alt='terrance'>
+            </div>
         </div>
-    </div>
+    </div>  
   </body>
 </html>
