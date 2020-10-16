@@ -218,32 +218,33 @@ hr.solid {
 
 /* log out button */
 
-a.button1{
-    display:inline-block;
-    padding:0.35em 1.2em;
-    border:0.2em solid #e6a33e;
-    margin:1.5em 2em 0.5em 0;
-    border-radius:0.12em;
-    box-sizing: border-box;
-    text-decoration:none;
-    
-    font-family: 'Mukta', sans-serif;
-    font-weight:900;
-    color:#e6a33e;
-    text-align:center;
-    transition: all 0.2s;
-    }
-a.button1:hover{
-    color:#000000;
-    font-weight:120000;
-    background-color:#FFFFFF;
-    border:0.2em solid #FFFFFF;
-    }
+input[type=submit].button1{
+  display:inline-block;
+  padding:0.35em 1.2em;
+  border:0.2em solid #e6a33e;
+  margin:1em 2em 0.5em 0;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  background-color: #F6D9AD;
+  font-family: 'Mukta', sans-serif;
+  font-weight:900;
+  color:#e6a33e;
+  text-align:center;
+  transition: all 0.2s;
+  font-size: 18px;
+  }
+input[type=submit].button1:hover{
+  color:#000000;
+  font-weight:120000;
+  background-color:#FFFFFF;
+  border:0.2em solid #FFFFFF;
+  }
 @media all and (max-width:30em){
-    a.button1{
-    display:block;
-    margin:0.4em auto;
-    }
+  input[type=submit].button1{
+  display:block;
+  margin:0.4em auto;
+  }
 }
 
 /* scrollbar */
