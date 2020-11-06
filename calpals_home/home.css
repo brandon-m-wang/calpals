@@ -1,0 +1,129 @@
+body {
+	background-color: #FAF2C5;
+}
+
+button {
+	padding: 0 1rem;
+  	margin: 1rem 0;
+  	height: 4rem;
+  	width: 8rem;
+  	font-family: Patua One;
+  	font-size: 1.3em;
+  	border:none;
+  	cursor: pointer;
+ 	transition: all 0.2s ease;
+ 	background: #E7B873;
+	border-radius: 20px;
+}
+
+p, label, input[type="text"] {
+	position: relative;
+	font-family: Mukta;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 28px;
+	color: #000000;
+}
+
+#round-bear{
+	margin: 1.5rem;
+}
+
+.small-img {
+	position: relative;
+	width: 16%;
+	height: 16%;
+	background-size: cover;
+	filter: drop-shadow(9px 9px  #003262);
+}
+
+#stamp-pic {
+	left: 140px;
+	top: 580px;
+	transform: rotate(-19.46deg);
+} 
+
+#letter-pic{
+	left:220px;
+	top: 510px;
+	transform: rotate(19.1deg);
+
+}
+
+#header-name{
+	position: absolute;
+	width: 532px;
+	height: 213px;
+	left: 150px;
+	top: 50px;
+	font-family: Fredoka One, cursive;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 8em;
+	line-height: 10px;
+	color: #003262;
+}
+
+.drop {
+	box-shadow: 18px 18px #003262;
+	background: #FFFFFF;
+}
+
+#description {
+	position: absolute;
+	width: 450px;
+	height: 300px;
+	left: 150px;
+	top: 225px;
+}
+
+#sign-in{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	width: 450px;
+	height: 700px;
+	left: 750px;
+	top: 50px;
+	margin-bottom: 4rem;
+
+}
+
+#bolder{
+	font-family: Patua One;
+	font-size: 2em;
+	margin: .2em;
+}
+
+#description p{
+	margin-left: 2.5rem;
+  	margin-right: 2.5rem;
+}
+.label{
+	margin-left: 7.2rem;
+	align-self: flex-start;
+
+ }
+#desc-head {
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 30px;
+	margin-bottom: 0rem;
+}
+
+input {
+	border-radius: 10px;
+	border-color: #003262;
+	width: 220px;
+    height:30px;
+    margin-bottom: 1.5rem;
+ {
+
+
+
+
+
+
