@@ -39,14 +39,14 @@ p, label, input[type="text"] {
 }
 
 #stamp-pic {
-	left: 140px;
-	top: 580px;
+	left: 7vw;
+	top: 58vh;
 	transform: rotate(-19.46deg);
 } 
 
 #letter-pic{
-	left:220px;
-	top: 510px;
+	left:11vw;
+	top: 51vh;
 	transform: rotate(19.1deg);
 }
 
@@ -83,10 +83,10 @@ p, label, input[type="text"] {
 	align-items: center;
 	justify-content: center;
 	position: absolute;
-	width: 450px;
-	height: 700px;
-	left: 75em;
-	top: 6em;
+	width: 20vw;
+	height: 80vh;
+	left: 65vw;
+	top: 7.5vh;
 	margin-bottom: 4rem;
 
 }
