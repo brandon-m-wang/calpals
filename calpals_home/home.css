@@ -4,7 +4,7 @@ body {
 
 button {
 	padding: 0 1rem;
-  	margin: 1rem 0;
+  	margin: 0.6rem 0;
   	height: 4rem;
   	width: 8rem;
   	font-family: Patua One;
@@ -48,7 +48,6 @@ p, label, input[type="text"] {
 	left:220px;
 	top: 510px;
 	transform: rotate(19.1deg);
-
 }
 
 #header-name{
@@ -86,8 +85,8 @@ p, label, input[type="text"] {
 	position: absolute;
 	width: 450px;
 	height: 700px;
-	left: 750px;
-	top: 50px;
+	left: 75em;
+	top: 6em;
 	margin-bottom: 4rem;
 
 }
@@ -114,13 +113,19 @@ p, label, input[type="text"] {
 	margin-bottom: 0rem;
 }
 
+.secondary-button{
+	color: #a09696;
+  	font-family: Patua One;
+  	font-size: 0.7em;
+}
+
 input {
 	border-radius: 10px;
 	border-color: #003262;
 	width: 220px;
-    height:30px;
-    margin-bottom: 1.5rem;
- {
+	height: 30px;
+	margin-bottom: 1.5rem;
+}
 
 
 
