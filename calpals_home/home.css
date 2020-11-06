@@ -26,7 +26,7 @@ p, label, input[type="text"] {
 	color: #000000;
 }
 
-#round-bear{
+.round-bear{
 	margin: 1.5rem;
 }
 
@@ -39,14 +39,14 @@ p, label, input[type="text"] {
 }
 
 #stamp-pic {
-	left: 7vw;
-	top: 58vh;
+	left: 4.5vw;
+	top: 63vh;
 	transform: rotate(-19.46deg);
 } 
 
 #letter-pic{
-	left:11vw;
-	top: 51vh;
+	left:5.5vw;
+	top: 55vh;
 	transform: rotate(19.1deg);
 }
 
@@ -69,28 +69,74 @@ p, label, input[type="text"] {
 	background: #FFFFFF;
 }
 
-#description {
-	position: absolute;
-	width: 450px;
-	height: 300px;
-	left: 150px;
-	top: 225px;
+.active-box {
+	box-sizing: border-box;
+    padding: 0 20px;
+    display: grid;
+    align-items: normal;
+    justify-items: normal;
+    position: absolute;
+    left: 47vw;
+	top: 14.5vh;
+    height: 60vh;
+    width: 20vw;
+    margin: auto;
+    background: #bae7f6;
+	box-shadow: 0 0 10px 8px rgba(0,0,0,0.2);
+    transition: all 500ms ease-in-out;
 }
 
-#sign-in{
+.active-box #sign-in-active {
+    padding-top: 4vh;
+
+}
+
+.active-box #sign-up-active{
+	padding-bottom: 1vh;
+}
+
+.inactive-box{
+	display: flex;
+	flex-direction: row;
+	align-items: normal;
+	justify-content: normal;
+	position: absolute;
+	width: 45vw;
+	height: 40vh;
+	left: 44.5vw;
+	top: 20vh;
+	margin-bottom: 4rem;
+	padding-top: 5vh;
+	background: #f1ffff;
+	box-shadow: 18px 18px #003262;
+}
+
+.inactive-box > div {
+	flex:1 1 auto;
+	margin:5px;
+}
+
+.sign-up {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	position: absolute;
-	width: 20vw;
-	height: 80vh;
-	left: 65vw;
-	top: 7.5vh;
-	margin-bottom: 4rem;
-
 }
 
+.sign-in {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#description {
+	position: absolute;
+	width: 25vw;
+	height: 32vh;
+	left: 8vw;
+	top: 24vh;
+}
 #bolder{
 	font-family: Patua One;
 	font-size: 2em;
@@ -102,9 +148,8 @@ p, label, input[type="text"] {
   	margin-right: 2.5rem;
 }
 .label{
-	margin-left: 7.2rem;
-	align-self: flex-start;
-
+	align-self: start;
+	margin-left: 3vw;
  }
 #desc-head {
 	font-weight: bold;
