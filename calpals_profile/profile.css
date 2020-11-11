@@ -1,0 +1,251 @@
+body{
+    margin: 0;
+}
+
+#header-name {
+    position: relative;
+    left: 30px;
+    font-family: Fredoka One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    align-self: center;
+    color: #003262;
+
+}
+#logo {
+    margin: 0.938em 0.938em 0.938em 1.875em;
+    position: relative;
+    left: 15%;
+    width: 70%;
+    height: auto;
+}
+#header {
+/*    Fixed header and sidebar */
+    display: flex;
+    position: fixed;
+    background-color: #FAF2C5;
+    height: 6.25em;
+    width: 100%;
+    z-index: 5;
+}
+
+.right-shift { 
+    position: relative;
+    display: flex;
+    left: 45%;
+    align-items: center;
+    font-family: Patua One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.563em;
+    line-height: 2.313em;
+    color: #003262;
+    margin: 15px;
+    text-decoration: none;
+}
+.right-shift:hover{
+    color: #A2E1F5;
+}
+.sidebar {
+    width: 13.75em; /* Set the width of the sidebar */
+    position: fixed;  /*Fixed Sidebar (stay in place on scroll)*/ 
+    z-index: 1;  /*Stay on top */
+    top: 100px; /* Stay at the top */
+    left: 0;
+    background-color: #F6D9AD; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding: 10px 30px 30px 30px;
+}
+.sidebar a {
+    padding: 0px 18px 0px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Mukta', sans-serif;
+    color: #635B5B;
+    display: block;
+}
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #fdfdfd;
+}
+
+
+.brown-block {
+	background-color: #E7B873;
+    width: 90%;	
+    border: 15px;
+    padding: 5px 5px 5px 10px;;
+    margin: 10px 0px 15px 0px;
+}
+
+#pf-pic {
+	padding-top: 80%;
+}
+#pfpic {
+	display: flex;
+	width: 90%;
+	height: 90%;
+	margin: 15px;
+	align-content: center;
+}
+h2{
+	margin: 5px 5px 5px 5px;
+	font-family: 'Patua One', cursive;
+    color: #FAF2C5;
+    font-size: 28px;
+}
+
+#friendlist {
+    margin: 20px 0px;
+}
+#page-body{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 20%;
+    left: 50%;
+/*    top: 150px;
+    left: 700px;*/
+    /*top: px;*/
+    /*left: 20px;*/
+/*    display:flex;
+    justify-content: center;*/
+}
+.content {
+    /* display: flex;
+    flex-direction: row;
+    align-items: center; */
+    display:flex; 
+    flex-wrap:wrap; 
+    flex-direction:column;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Mukta', sans-serif;
+    color: black;
+    /*top: ;*/
+     position: absolute; 
+    
+   
+}
+
+
+
+.content #post {
+    font-size: 1.125em;
+    justify-content: center;
+    /* word-wrap: break-word;
+    overflow-wrap: break-word; */
+    /* flex:auto auto auto; */
+    width: 550px; 
+    /* width: 350px; */
+    border: 25px solid #FAF2C5;
+    background-color: #FFFDF2;
+    margin: 0px 50px 30px 120px;
+    padding: 20px;
+    color: black;
+    box-shadow: 20px 25px 0px #003262;
+}
+
+.content #post-header{
+    font-size: 18px;
+    justify-content: center;
+    /* word-wrap: break-word;
+    overflow-wrap: break-word; */
+    /* flex:auto auto auto; */
+    width: auto; 
+    
+    margin: 50px 50px 0px 120px;
+    text-align: right;
+    /* width: 350px; */
+    box-shadow: 20px 26px 0px #003262;
+    background-color: #A2E1F5;
+    
+    padding: 15px 25px 15px 10px;
+    
+    color: #003262;
+}
+
+.content #post-header a{
+    padding: 5px;
+    text-decoration: underline;
+    text-decoration-color: #5f9fdb;
+    color: #003262;
+    font-weight: 700;
+}
+
+.content #post-header img{
+    float: left;
+    height: 30px;
+    width: auto;
+    padding-left:10px;
+}
+
+.content #rectangle{
+    width: 350px;
+    height: 300px;
+    margin-left: 50px;
+    background:#003262;
+    position:relative;
+    
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f7e9d5;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:#ebc388;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e6a33e;
+  }
+hr.solid {
+    border-top: 0.1em solid #FAF2C5;
+    width:100%;
+    margin: 5px 0px 5px 0px;
+}
+
+.sidebar-link {
+    font-weight: bold;
+    margin: 0px 0px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Mukta', sans-serif;
+    color: #635B5B;
+    display: block;
+}
+textarea {
+    font-size: 18px;
+    justify-content: center;
+    width: 600px; 
+    height: 100px;
+    background-color: white;
+    margin: 30px 50px 30px 120px;
+    padding: 20px;
+    box-shadow: 20px 20px 0px #003262;
+    resize: vertical;
+    border-color: black;
+}
+#post-btn {
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-family: Mukta;
+    font-size: 20px;
+    color: #6F6B6B;
+    background:#EDCA96;
+    padding: 7px;
+    width: 150px;
+    position: relative;
+    left: 25px;
+}
