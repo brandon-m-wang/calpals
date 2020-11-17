@@ -3,11 +3,81 @@ html {
 }
 
 body {
-    margin-left: 5%;
+    margin: 0%;
     color: #3d9bc2;
 
 }
 
+/* .body2 {
+  margin-top: 100px;
+
+} */
+/* The header */
+
+/* .head-side  {
+  display:flex; 
+  flex-wrap:wrap; 
+  flex-direction: column;
+  justify-content: flex-start;
+  position: fixed;
+
+} */
+
+/* #side1.head-side {
+  position: fixed;
+}
+
+#header.head-side {
+  position: fixed;
+} */
+
+#header-name {
+  position: relative;
+  left: 30px;
+  font-family: Fredoka One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  align-self: center;
+  color: #003262;
+
+}
+#logo {
+  margin: 0.938em 0.938em 0.938em 1.875em;
+  position: relative;
+  left: 15%;
+  width: 70%;
+  height: auto;
+}
+#header {
+/*    Fixed header and sidebar */
+  display: flex;
+  position: fixed;
+  background-color: #FAF2C5;
+  height: 6.25em;
+  width: 100%;
+  top: 0;
+  z-index: 5;
+  margin-bottom: 10px;
+}
+
+.right-shift { 
+  position: relative;
+  display: flex;
+  left: 45%;
+  align-items: center;
+  font-family: Patua One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.563em;
+  line-height: 2.313em;
+  color: #003262;
+  margin: 15px;
+  text-decoration: none;
+}
+.right-shift:hover{
+  color: #A2E1F5;
+}
 
 /* The sidebar menu */
 .sidenav {
@@ -15,11 +85,12 @@ body {
     width: 280px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+    top: 0px; /* Stay at the top */
     left: 0;
     background-color: #F6D9AD; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding: 10px 30px 30px 30px;
+    /* overflow-y: auto; */
+    padding: 100px 30px 30px 30px;
     
 }
   
@@ -204,9 +275,12 @@ hr.solid {
 
   /* Style page content */
 .main {
-    margin-left: 280px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
+    margin-left: 180px; /* Same as the width of the sidebar */
+    margin-top: 100px;
+    /* padding: 0px 10px; */
     padding-bottom: 75px;
+    display: flex;
+    justify-content: space-around;
     
 }   
   
@@ -284,7 +358,7 @@ input[type=submit].button1:hover{
     justify-content: center;
     font-family: 'Mukta', sans-serif;
     color: black;
-    
+    /* margin-top: 100px; */
     /* position: absolute; */
     
    
@@ -306,6 +380,7 @@ input[type=submit].button1:hover{
     border: 25px solid #FAF2C5;
     background-color: #FFFDF2;
     margin: 0px 50px 30px 120px;
+    
     padding: 20px;
     color: black;
     box-shadow: 20px 25px 0px #003262;
