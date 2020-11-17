@@ -5,11 +5,105 @@ html {
 }
 
 body {
-    margin-left: 5%;
+    margin-left: 0%;
     color: #3d9bc2;
 
 }
 
+#header-name {
+  position: relative;
+  display: flex;
+  justify-content: left;
+  left: 30px;
+  font-family: Fredoka One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  align-self: center;
+  color: #003262;
+
+}
+#logo {
+  margin: 0.938em 0.938em 0.938em 1.875em;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  left: 15%;
+  width: 70%;
+  height: auto;
+}
+#header {
+/*    Fixed header and sidebar */
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  position: fixed;
+  background-color: #FAF2C5;
+  height: 6.25em;
+  width: 100%;
+  top: 0;
+  z-index: 5;
+  padding-right: 2em;
+  /* margin-bottom: 10px; */
+}
+
+/* .right-shift { 
+  position: relative;
+  display: flex;
+  left: 45%;
+  align-items: center;
+  font-family: Patua One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.563em;
+  line-height: 2.313em;
+  color: #003262;
+  margin: 15px;
+  text-decoration: none;
+} */
+/* .right-shift:hover{
+  color: #A2E1F5;
+} */
+
+.right-shift2 {
+  /* text-align: right; */
+  /* display: flex;
+  flex-wrap:wrap; 
+  flex-direction:row; */
+  /* word-wrap: break-word;
+  overflow-wrap: break-word; */
+  /* align-items: center;  */
+  /* justify-content: flex-end; */
+  
+}
+
+.right-shift2 a { 
+  
+  font-family: Patua One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.563em;
+  line-height: 2.313em;
+  color: #003262;
+  margin: 15px;
+  text-decoration: none;
+}
+.right-shift2 a:hover{
+  color: #A2E1F5;
+}
+
+.right-shift3 {
+  /* text-align: right; */
+  display: flex;
+  flex-wrap:wrap; 
+  flex-direction:row;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  align-items: center; 
+  justify-content: flex-start;
+  /* float: left; */
+  
+}
 
 /* The sidebar menu */
 .sidenav {
@@ -21,7 +115,7 @@ body {
     left: 0;
     background-color: #F6D9AD; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding: 10px 30px 30px 30px;
+    padding: 100px 30px 30px 30px;
     
 }
   
@@ -222,9 +316,17 @@ hr.solid {
 
   /* Style page content */
 .main {
-    margin-left: 280px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
-    padding-bottom: 50px;
+    /* margin-left: 280px; Same as the width of the sidebar
+    padding: 0px 10px; */
+    padding-right: 200px;
+    margin-left: 21em; /* Same as the width of the sidebar */
+    margin-top: 100px;
+    /* padding: 0px 10px; */
+    padding-bottom: 75px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end; */
 }   
   
   /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
@@ -396,6 +498,7 @@ input[type=submit].button1:hover{
 .account {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
   
   
@@ -520,10 +623,12 @@ input[type=submit].button2:hover{
 .form-box2 {
   display: grid;
   grid-template-columns: repeat(2,1fr);
+  
+  grid-auto-rows: 50px;
   align-items: center;
-  grid-auto-rows: 60px;
+  /* grid-auto-rows: 60px; */
   margin-top: 15px;
-  margin-right: 420px;
+  margin-right: 760px;
   line-height: 1;
 }
 
@@ -555,11 +660,12 @@ input[type=submit]:hover {
 } */
 
 .container2 {
+  
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px 50px 20px 50px;
-  
-  margin-right: 50px;
+  width: 850px;
+  margin-right: 100px;
   margin-top: 20px;
 }
 
