@@ -589,6 +589,10 @@ form {
   width: 600px;
 }
 
+.form-box #gender{
+  padding: 0px;
+  padding-left: 5px;
+}
 /* submit button */
 
 input[type=submit].button2{
