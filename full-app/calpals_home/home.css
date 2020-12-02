@@ -1,0 +1,179 @@
+body {
+	background-color: #FAF2C5;
+}
+
+button {
+	padding: 0 1rem;
+  	margin: 0.6rem 0;
+  	height: 4rem;
+  	width: 8rem;
+  	font-family: Patua One;
+  	font-size: 1.3em;
+  	border:none;
+  	cursor: pointer;
+ 	transition: all 0.2s ease;
+ 	background: #E7B873;
+	border-radius: 20px;
+}
+
+p, label, input[type="text"] {
+	position: relative;
+	font-family: Mukta;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 28px;
+	color: #000000;
+}
+
+.round-bear{
+	margin: 1.5rem;
+}
+
+.small-img {
+	position: relative;
+	width: 16%;
+	height: 16%;
+	background-size: cover;
+	filter: drop-shadow(9px 9px  #003262);
+}
+
+#stamp-pic {
+	left: 4.5vw;
+	top: 63vh;
+	transform: rotate(-19.46deg);
+} 
+
+#letter-pic{
+	left:5.5vw;
+	top: 55vh;
+	transform: rotate(19.1deg);
+}
+
+#header-name{
+	position: absolute;
+	width: 532px;
+	height: 213px;
+	left: 150px;
+	top: 50px;
+	font-family: Fredoka One, cursive;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 8em;
+	line-height: 10px;
+	color: #003262;
+}
+
+.drop {
+	box-shadow: 18px 18px #003262;
+	background: #FFFFFF;
+}
+
+.active-box {
+	box-sizing: border-box;
+    padding: 0 20px;
+    display: grid;
+    align-items: normal;
+    justify-items: normal;
+    position: absolute;
+    left: 47vw;
+	top: 14.5vh;
+    height: 60vh;
+    width: 20vw;
+    margin: auto;
+    background: #bae7f6;
+	box-shadow: 0 0 10px 8px rgba(0,0,0,0.2);
+    transition: all 500ms ease-in-out;
+}
+
+.active-box #sign-in-active {
+    padding-top: 4vh;
+
+}
+
+.active-box #sign-up-active{
+	padding-bottom: 1vh;
+}
+
+.inactive-box{
+	display: flex;
+	flex-direction: row;
+	align-items: normal;
+	justify-content: normal;
+	position: absolute;
+	width: 45vw;
+	height: 40vh;
+	left: 44.5vw;
+	top: 20vh;
+	margin-bottom: 4rem;
+	padding-top: 5vh;
+	background: #f1ffff;
+	box-shadow: 18px 18px #003262;
+}
+
+.inactive-box > div {
+	flex:1 1 auto;
+	margin:5px;
+}
+
+.sign-up {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.sign-in {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#description {
+	position: absolute;
+	width: 25vw;
+	height: 32vh;
+	left: 8vw;
+	top: 24vh;
+}
+#bolder{
+	font-family: Patua One;
+	font-size: 2em;
+	margin: .2em;
+}
+
+#description p{
+	margin-left: 2.5rem;
+  	margin-right: 2.5rem;
+}
+.label{
+	align-self: start;
+	margin-left: 3vw;
+ }
+#desc-head {
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 30px;
+	margin-bottom: 0rem;
+}
+
+.secondary-button{
+	color: #a09696;
+  	font-family: Patua One;
+  	font-size: 0.7em;
+}
+
+input {
+	border-radius: 10px;
+	border-color: #003262;
+	width: 220px;
+	height: 30px;
+	margin-bottom: 1.5rem;
+}
+
+
+
+
+
+
