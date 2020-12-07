@@ -1,0 +1,376 @@
+/* Lines 3-273 style the side navigation bar - taken from Angela's homefeed page */
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 280px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #F6D9AD; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding: 10px 30px 30px 30px; 
+}
+
+  /* The navigation menu links */
+.sidenav a {
+    padding: 0px 18px 0px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Mukta', sans-serif;
+    color: #635B5B;
+    display: block;
+}
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #fdfdfd;
+}
+
+.side_subheadings{
+    font-weight: bold;
+    padding: 0px 0px 0px 0px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Mukta', sans-serif;
+    color: #635B5B;
+    display: block;
+}
+
+.side_title {
+    background-color: #E7B873;
+    width: 100%;
+    border: 15px;
+    padding: 5px 5px 5px 10px;;
+    margin: 25px 0px 15px 0px;
+    font-family: 'Patua One', cursive;
+    color: #FAF2C5;
+    font-size: 28px;
+}
+
+
+
+
+/* filter buttons */
+
+/* Customize the label (the container) */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin: 5px 0px 5px 0px;
+    color: #635B5B;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Mukta', sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #f3eed2;
+    margin: 5px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #FAF2C5;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #e6a33e;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 5.5px;
+    top: 3px;
+    width: 2px;
+    height: 5px;
+    border: solid white ;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+/* Solid border for divider */
+hr.solid {
+    border-top: 0.1em solid #FAF2C5;
+    width:100%;
+    margin: 5px 0px 5px 0px;
+}
+
+  /* Style page content */
+.main {
+    margin-left: 280px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+    padding-bottom: 75px;  
+}   
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/* log out button */
+
+input[type=submit].button1{
+  display:inline-block;
+  padding:0.35em 1.2em;
+  border:0.2em solid #e6a33e;
+  margin:1em 2em 0.5em 0;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  background-color: #F6D9AD;
+  font-family: 'Mukta', sans-serif;
+  font-weight:900;
+  color:#e6a33e;
+  text-align:center;
+  transition: all 0.2s;
+  font-size: 18px;
+  }
+input[type=submit].button1:hover{
+  color:#000000;
+  font-weight:120000;
+  background-color:#FFFFFF;
+  border:0.2em solid #FFFFFF;
+  }
+@media all and (max-width:30em){
+  input[type=submit].button1{
+  display:block;
+  margin:0.4em auto;
+  }
+}
+
+/* scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f7e9d5;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:#ebc388;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e6a33e;
+  }
+
+.content {
+    /* display: flex;
+    flex-direction: row;
+    align-items: center; */
+    display:flex; 
+    flex-wrap:wrap; 
+    flex-direction:column;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    justify-content: center;
+    font-family: 'Mukta', sans-serif;
+    color: black;
+}
+
+
+/* Dropdown filter */
+.filter {
+  background-color: #FBF7F0;
+  color: #003262;
+  padding: 16px;
+  font-size: 16px;
+  font-family: Mukta;
+  border: 1px solid #CDCDCD;
+  cursor: pointer;
+}
+
+.filter:hover, .filter:focus {
+  background-color: #F4EFE7;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+.stamp-box {
+  display: inline-flex;
+  width: 265px;
+  height: 255px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #FFFDF2;
+  box-shadow: 20px 26px 0px #003262;
+}
+
+.stamp-box .stamp-header {
+  font-size: 18px;
+  justify-content: center;
+  width: 265px;
+  height: 40px;
+  background-color: #A2E1F5;
+  text-align: right;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.stamp-box .stamp-header a {
+  float: right;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stamp-box .stamp-header img {
+  float: left;
+  height: 30px;
+  width: auto;
+  padding-left: 10px;
+}
+
+.subheader {
+  margin: 50px;
+}
+
+.subheader .search-label {
+  font-family: 'Patua One';
+
+}
+
+/* Formatting the different stamps */
+.stamp-box .stamp-body img {
+  /* width: 200px;
+  height: 250px; */
+  width: 75%;
+  height: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Formatting the search bar */
+.search-bar {
+  float: left;
+  padding: 20px;
+}
+
+.search-bar .search {
+  background-color: #F8F0E4;
+  border: 1px #CDCDCD;
+}
+  
+  
+  /* Style the search field */
+
+  
+  form.search input[type=text] {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #CDCDCD;
+    float: left;
+    width: 25%;
+    height: 25px;
+    background: #F8F0E4;
+    color: #635B5B;
+    font-family: 'Mukta', sans-serif;
+
+  }
+
+  ::placeholder {
+    color: #B6B6B6;
+  }
+  
+  /* Style the search button */
+  form.search button {
+    float: left;
+    width: 10%;
+    height: 47px;
+    background: #e6a33e;
+    border: 1px solid #CDCDCD;
+    color: white;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    font-family: 'Patua One';
+  }
+  
+  form.example button:hover {
+    background: #c78727;
+  }
+  
+  /* Clear floats */
+  form.search::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  

@@ -1,7 +1,7 @@
 html {
     font-family: 'Mulish', sans-serif;
     scroll-behavior: smooth;
-    
+
 }
 
 body {
@@ -35,7 +35,7 @@ body {
 #header {
 /*    Fixed header and sidebar */
   display: flex;
-  align-items: center; 
+  align-items: center;
   justify-content: space-between;
   position: fixed;
   background-color: #FAF2C5;
@@ -47,7 +47,7 @@ body {
   /* margin-bottom: 10px; */
 }
 
-/* .right-shift { 
+/* .right-shift {
   position: relative;
   display: flex;
   left: 45%;
@@ -68,17 +68,17 @@ body {
 .right-shift2 {
   /* text-align: right; */
   /* display: flex;
-  flex-wrap:wrap; 
+  flex-wrap:wrap;
   flex-direction:row; */
   /* word-wrap: break-word;
   overflow-wrap: break-word; */
   /* align-items: center;  */
   /* justify-content: flex-end; */
-  
+
 }
 
-.right-shift2 a { 
-  
+.right-shift2 a {
+
   font-family: Patua One;
   font-style: normal;
   font-weight: normal;
@@ -95,14 +95,14 @@ body {
 .right-shift3 {
   /* text-align: right; */
   display: flex;
-  flex-wrap:wrap; 
+  flex-wrap:wrap;
   flex-direction:row;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  align-items: center; 
+  align-items: center;
   justify-content: flex-start;
   /* float: left; */
-  
+
 }
 
 /* The sidebar menu */
@@ -116,9 +116,9 @@ body {
     background-color: #F6D9AD; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding: 100px 30px 30px 30px;
-    
+
 }
-  
+
   /* The navigation menu links */
 .sidenav a {
     padding: 0px 18px 0px 10px;
@@ -173,11 +173,11 @@ body {
 } */
 
 /* search bar */
-  
+
 * {
     box-sizing: border-box;
   }
-  
+
   /* Style the search field */
   form.example input[type=text] {
     padding: 10px;
@@ -198,15 +198,15 @@ body {
     color: #B6B6B6;
     opacity: 1; /* Firefox */
   }
-  
+
   :-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: #B6B6B6;
   }
-  
+
   ::-ms-input-placeholder { /* Microsoft Edge */
     color: #B6B6B6;
   }
-  
+
   /* Style the submit button */
   form.example button {
     float: left;
@@ -220,11 +220,11 @@ body {
     font-size: 17px;
     cursor: pointer;
   }
-  
+
   form.example button:hover {
     background: #c78727;
   }
-  
+
   /* Clear floats */
   form.example::after {
     content: "";
@@ -250,7 +250,7 @@ body {
     -ms-user-select: none;
     user-select: none;
   }
-  
+
   /* Hide the browser's default checkbox */
   .container input {
     position: absolute;
@@ -259,7 +259,7 @@ body {
     height: 0;
     width: 0;
   }
-  
+
   /* Create a custom checkbox */
   .checkmark {
     position: absolute;
@@ -269,31 +269,31 @@ body {
     width: 15px;
     background-color: #f3eed2;
     margin: 5px;
-    
+
   }
-  
+
   /* On mouse-over, add a grey background color */
   .container:hover input ~ .checkmark {
     background-color: #FAF2C5;
   }
-  
+
   /* When the checkbox is checked, add a blue background */
   .container input:checked ~ .checkmark {
     background-color: #e6a33e;
   }
-  
+
   /* Create the checkmark/indicator (hidden when not checked) */
   .checkmark:after {
     content: "";
     position: absolute;
     display: none;
   }
-  
+
   /* Show the checkmark when checked */
   .container input:checked ~ .checkmark:after {
     display: block;
   }
-  
+
   /* Style the checkmark/indicator */
   .container .checkmark:after {
     left: 5.5px;
@@ -327,8 +327,8 @@ hr.solid {
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-end; */
-}   
-  
+}
+
   /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
@@ -393,17 +393,17 @@ input[type=submit].button1:hover{
 ::-webkit-scrollbar {
     width: 10px;
   }
-  
+
   /* Track */
   ::-webkit-scrollbar-track {
     background: #f7e9d5;
   }
-  
+
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background:#ebc388;
   }
-  
+
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #e6a33e;
@@ -415,8 +415,8 @@ input[type=submit].button1:hover{
     flex-direction: row;
     align-items: center; */
 
-    display:flex; 
-    flex-wrap:wrap; 
+    display:flex;
+    flex-wrap:wrap;
     flex-direction:row;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -424,8 +424,8 @@ input[type=submit].button1:hover{
     font-family: 'Mukta', sans-serif;
     color: black;
     /* position: absolute; */
-    
-   
+
+
 }
 
 .content #post {
@@ -434,7 +434,7 @@ input[type=submit].button1:hover{
     /* word-wrap: break-word;
     overflow-wrap: break-word; */
     /* flex:auto auto auto; */
-    width: 350px; 
+    width: 350px;
     /* width: 350px; */
     border: 25px solid #FAF2C5;
     background-color: #FFFDF2;
@@ -449,16 +449,16 @@ input[type=submit].button1:hover{
     /* word-wrap: break-word;
     overflow-wrap: break-word; */
     /* flex:auto auto auto; */
-    width: 350px; 
-    
+    width: 350px;
+
     margin: 50px 50px 0px 30px;
     text-align: right;
     /* width: 350px; */
-    
+
     background-color: #A2E1F5;
-    
+
     padding: 15px 25px 15px 10px;
-    
+
     color: #003262;
 }
 
@@ -483,7 +483,7 @@ input[type=submit].button1:hover{
     margin-left: 50px;
     background:#003262;
     position:relative;
-    
+
 }
 
 
@@ -492,7 +492,7 @@ input[type=submit].button1:hover{
   color: #635B5B;
   font-size: 18px;
   font-family: 'Mukta', sans-serif;
-  
+
 }
 
 .account {
@@ -500,20 +500,18 @@ input[type=submit].button1:hover{
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  
-  
 }
 
 .account #profile-pic {
     /* width: 30%;
     height: auto;
     border-radius: 50%; */
-    
-    height: 80px;
-    width: 80px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
     object-fit: cover;
     margin-left: 15px;
+    margin-top: 15px;
 }
 
 .main #title {
@@ -529,10 +527,10 @@ input[type=submit].button1:hover{
 .account #info {
   display: flex;
   flex-direction: column;
-  
+
   margin: 15px 15px 15px 20px;
   padding: 5px;
-  
+
 }
 
 .account #username {
@@ -544,7 +542,7 @@ input[type=submit].button1:hover{
   text-decoration-color: #5f9fdb;
   color: #003262;
   font-weight: 700;
-  
+
 }
 
 /* inputting info */
@@ -581,7 +579,7 @@ form {
   grid-template-columns: repeat(2,1fr);
   align-items: center;
   grid-auto-rows: 50px;
-  
+
   margin-right: 680px;
 }
 
@@ -627,7 +625,7 @@ input[type=submit].button2:hover{
 .form-box2 {
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  
+
   grid-auto-rows: 50px;
   align-items: center;
   /* grid-auto-rows: 60px; */
@@ -664,7 +662,7 @@ input[type=submit]:hover {
 } */
 
 .container2 {
-  
+
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px 50px 20px 50px;
@@ -703,7 +701,7 @@ input[type=submit]:hover {
   color: #635B5B;
   font-size: 15px;
   font-family: 'Mukta', sans-serif;
-  
+
 }
 
 .form-box3 select{

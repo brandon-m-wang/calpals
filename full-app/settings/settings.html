@@ -1,121 +1,145 @@
 <!doctype html>
 <html>
-  <head>
+<head>
     <link rel="stylesheet" type="text/css" href="./settings.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Mukta&family=Patua+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Mukta&family=Patua+One&display=swap"
+          rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" 
-                type="image/png" 
-                href="logobear.ico" />
+    <link rel="icon"
+          type="image/png"
+          href="logobear.ico"/>
     <title>Settings - CalPals</title>
 </head>
-  <body>
-    <!-- <div class="head-side"> -->
-    <div id="header" style="clear: both;">
-        <div class="right-shift3">
-        <a href="../homefeed/homefeed.html" ><img id="logo" src="logo.svg"></a>
-        <h1 id ="header-name"> CalPals </h1>
-        </div>
-        <div class="right-shift2">
-        <a href="replace this" class="right-shift"> Stamp Store </a>
+<body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-storage.js"></script>
+<script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyA0Yl8igRCQQaDVJ8-eVFE614d2fARpewU",
+        authDomain: "t-collective-294802.firebaseapp.com",
+        databaseURL: "https://t-collective-294802.firebaseio.com",
+        projectId: "t-collective-294802",
+        storageBucket: "t-collective-294802.appspot.com",
+        messagingSenderId: "799504820235",
+        appId: "1:799504820235:web:b31adf9cc6c88692e27f0e",
+        measurementId: "G-Q2FFZLHGM2"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+</script>
+<script src="settings.js"></script>
+<!-- <div class="head-side"> -->
+<div id="header" style="clear: both;">
+    <div class="right-shift3">
+        <a href="../homefeed/homefeed.html"><img id="logo" src="logo.svg"></a>
+        <h1 id="header-name"> CalPals </h1>
+    </div>
+    <div class="right-shift2">
+        <a href="../stamp/stampstore.html" class="right-shift"> Stamp Store </a>
         <a href="../calpals_profile/profile.html" class="right-shift"> Profile </a>
         <a href="../settings/settings.html" class="right-shift"> Settings </a>
+    </div>
+</div>
+<!-- Side navigation -->
+<div class="sidenav">
+    <!-- <div class='side_title'>search</div> -->
+
+    <!-- search in sidebar -->
+    <!-- <form class="example" action="action_page.php">
+    <input type="text" placeholder="Interests, hobbies, major..." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+
+    <div class="side_subheadings">FILTER:</div> -->
+
+    <!-- filter buttons -->
+    <!-- <label class="container">My Friends Only
+        <input type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+    </label>
+
+    <label class="container">Same Gender Identity As Me
+        <input type="checkbox">
+        <span class="checkmark"></span>
+    </label>
+
+
+    <div class="side_subheadings">Dates posted:</div>
+
+    <label class="container">From Last 3 Days
+        <input type="checkbox">
+        <span class="checkmark"></span>
+    </label>
+
+    <label class="container">From Last Week
+        <input type="checkbox">
+        <span class="checkmark"></span>
+    </label>
+
+    <label class="container">From Last Month
+        <input type="checkbox">
+        <span class="checkmark"></span>
+    </label> -->
+
+    <div class='side_title'>navigation</div>
+    <a href="#goto" class="sliding-link">Edit Profile</a>
+    <hr class="solid">
+    <a href="#goto2" class="sliding-link">Change Password</a>
+    <hr class="solid">
+    <a href="#goto3" class="sliding-link">Contact Us</a>
+    <hr class="solid">
+    <!-- <a href="#goto4" class="sliding-link">Link to div</a>
+    <hr class="solid"> -->
+
+    <input type="submit" class='button1' value="LOG OUT">
+
+
+</div>
+
+<!-- Page content -->
+
+<div class="main">
+
+
+    <div class='section1' id="goto">
+        <br>
+        <div id='title'>
+            Edit Profile
         </div>
-    </div>
-    <!-- Side navigation -->
-    <div class="sidenav">
-        <!-- <div class='side_title'>search</div> -->
-
-        <!-- search in sidebar -->
-        <!-- <form class="example" action="action_page.php">
-        <input type="text" placeholder="Interests, hobbies, major..." name="search">
-        <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-
-        <div class="side_subheadings">FILTER:</div> -->
-
-        <!-- filter buttons -->
-        <!-- <label class="container">My Friends Only
-            <input type="checkbox" checked="checked">
-            <span class="checkmark"></span>
-        </label>
-          
-        <label class="container">Same Gender Identity As Me
-            <input type="checkbox">
-            <span class="checkmark"></span>
-        </label>
-          
-        
-        <div class="side_subheadings">Dates posted:</div>
-
-        <label class="container">From Last 3 Days
-            <input type="checkbox">
-            <span class="checkmark"></span>
-        </label>
-          
-        <label class="container">From Last Week
-            <input type="checkbox">
-            <span class="checkmark"></span>
-        </label>
-
-        <label class="container">From Last Month
-            <input type="checkbox">
-            <span class="checkmark"></span>
-        </label> -->
-
-        <div class='side_title'>navigation</div>
-        <a href="#goto" class="sliding-link">Edit Profile</a>
-        <hr class="solid">
-        <a href="#goto2" class="sliding-link">Change Password</a>
-        <hr class="solid">
-        <a href="#goto3" class="sliding-link">Contact Us</a>
-        <hr class="solid">
-        <!-- <a href="#goto4" class="sliding-link">Link to div</a>
-        <hr class="solid"> -->
-        
-        <input type="submit" class='button1' value="LOG OUT">
-
-        
-    </div>
-
-    <!-- Page content -->
-
-    <div class="main">
-            
-
-        <div class='section1' id="goto">
-            <br>
-            <div id='title'>
-                Edit Profile
+        <div class='account'>
+            <img id='profile-pic' src='https://racemph.com/wp-content/uploads/2016/09/profile-image-placeholder.png' alt='profile picture'>
+            <div id='info'>
+                <h1 id='username'>username</h1>
+                <p>Change Profile Photo</p>
+                <input type="file" name ='pfp' onchange='chooseFile(event)'/>
+                <button onclick = 'reload()' style="max-width: 4rem">Submit</button>
             </div>
-            <div class='account'>
-                <img id='profile-pic' src='angela.jpeg' alt='profile picture'>
-                <div id='info'>
-                    <div id='username'>username</div>
-                    <a href="something">Change Profile Photo</a>
-                </div>
-            </div>
-            <div class='form-box'>
-                <form>
-                    <label for="fname">Name</label>
-                </form>
-                <form>
-                    <input type="text" id="fname" name="fname" placeholder="Your full name, nickname, or business name" value="Angela Zhang">
-                </form>
-                <form>
-                    <label for="pronouns">Pronouns</label>
-                </form>
-                <form>
-                    <input type="text" id="fname" name="fname" placeholder="Your preferred pronouns" value="She/Her/Hers">
-                </form>
-                <form>
-                    <label for="gender">Gender</label>
-                </form>
-                <form>
-                    <select id="gender" name="gender">
+        </div>
+        <div class='form-box'>
+            <form>
+                <label for="fname">Name</label>
+            </form>
+            <form>
+                <input type="text" id="fname" name="fname" placeholder="Your full name, nickname, or business name"
+                      >
+            </form>
+            <form>
+                <label for="pronouns">Pronouns</label>
+            </form>
+            <form>
+                <input type="text" id="pronouns" name="fname" placeholder="Your preferred pronouns"
+                       >
+            </form>
+            <form>
+                <label for="gender">Gender</label>
+            </form>
+            <form>
+                <select id="gender" name="gender">
                     <option value="female">Female</option>
                     <option value="male">Male</option>
                     <option value="non-binary">Non-binary</option>
@@ -125,114 +149,118 @@
                     <option value="intersex">Intersex</option>
                     <option value="other">Other</option>
                     <option value="no-answer">Prefer not to say</option>
-                    </select>
+                </select>
+            </form>
+            <form>
+                <label for="username">Username</label>
+            </form>
+            <form>
+                <input type="text" id="user_name" name="username" placeholder="Username">
+            </form>
+            <form>
+                <label for="email">Email</label>
+            </form>
+            <form>
+                <input type="text" id="e-mail" name="email" placeholder="Your berkeley.edu email"
+                       value="calpals@berkeley.edu">
+            </form>
+            <form>
+                <label for="address">Address</label>
+            </form>
+            <form>
+                <input id='address' type="text" name="address"
+                       placeholder="Your mailing address - this will be hidden from the public and only visible to friends"
+                       value="110 Sproul Hall #5800, Berkeley, CA 94720-5800">
+            </form>
+        </div>
+        <input type="submit" class='button2' value="Save Changes" onclick="saveChanges()">
+
+    </div>
+    <div class='section1' id="goto2">
+        <br>
+        <div id='title'>
+            Change Password
+        </div>
+        <div class='account'>
+
+        </div>
+        <div class='form-box2'>
+            <form>
+                <label for="pw" class="password">Old Password</label>
+            </form>
+            <form>
+                <input type="text" id="pw" name="old-pw" placeholder="Your old password">
+            </form>
+            <form>
+                <label for="pw" class="password">New Password</label>
+            </form>
+            <form>
+                <input type="text" id="pw" name="new-pw" placeholder="New password cannot repeat old password">
+            </form>
+            <form>
+                <label for="pw" class="password">Confirm New Password</label>
+            </form>
+            <form>
+                <input type="text" id="pw" name="pw" placeholder="Confirm your new password">
+            </form>
+        </div>
+        <input type="submit" class='button2' value="Save Changes">
+    </div>
+    <div id="goto3">
+        <br>
+
+        <div id='title'>
+            Contact Us
+        </div>
+        <div class='account'>
+
+        </div>
+
+        <div class='container2'>
+            <div class='form-box3'>
+                <form id="message-label">
+                    <label for="fname">Name</label>
                 </form>
                 <form>
-                    <label for="username">Username</label>
+                    <input type="text" id="f_name" name="fname" placeholder="Your full name, nickname, or business name">
                 </form>
-                <form>
-                    <input type="text" id="username" name="username" placeholder="Username" value="ahnjello">
-                </form>
-                <form>
+                <form id="message-label">
                     <label for="email">Email</label>
                 </form>
                 <form>
-                    <input type="text" id="email" name="email" placeholder="Your berkeley.edu email" value="calpals@berkeley.edu">
+                    <input type="text" id="email" name="email" placeholder="Your berkeley.edu email"
+                           >
                 </form>
-                <form>
-                    <label for="address">Address</label>
-                </form>
-                <form>
-                    <input id='address' type="text" name="address" placeholder="Your mailing address - this will be hidden from the public and only visible to friends" value="110 Sproul Hall #5800, Berkeley, CA 94720-5800">
-                </form>
-            </div>
-            <input type="submit" class='button2' value="Save Changes">
-            
-        </div>
-        <div class='section1' id="goto2">
-            <br>
-            <div id='title'>
-                Change Password
-            </div>
-            <div class='account'>
-                
-            </div>
-            <div class='form-box2'>
-                <form>
-                    <label for="pw" class="password" >Old Password</label>
-                </form>
-                <form>
-                    <input type="text" id="pw" name="old-pw" placeholder="Your old password">
-                </form>
-                <form>
-                    <label for="pw" class="password" >New Password</label>
-                </form>
-                <form>
-                    <input type="text" id="pw" name="new-pw" placeholder="New password cannot repeat old password">
-                </form>
-                <form>
-                    <label for="pw" class="password">Confirm New Password</label>
-                </form>
-                <form>
-                    <input type="text" id="pw" name="pw" placeholder="Confirm your new password">
-                </form>
-            </div>
-            <input type="submit" class='button2' value="Save Changes">
-        </div>
-        <div id="goto3">
-            <br>
-            
-            <div id='title'>
-                Contact Us
-            </div>
-            <div class='account'>
-                
-            </div>
 
-            <div class='container2'>
-                <div class='form-box3'>
-                    <form id="message-label">
-                        <label for="fname">Name</label>
-                    </form>
-                    <form>
-                        <input type="text" id="fname" name="fname" placeholder="Your full name, nickname, or business name" value="Angela Zhang">
-                    </form>
-                    <form id="message-label">
-                        <label for="email">Email</label>
-                    </form>
-                    <form>
-                        <input type="text" id="email" name="email" placeholder="Your berkeley.edu email" value="calpals@berkeley.edu">
-                    </form>
-                    
-                    <form id="message-label">
-                        <label for="subject">Subject</label>
-                    </form>
-                    <form>
-                        <select id="subject" name="subject">
+                <form id="message-label">
+                    <label for="subject">Subject</label>
+                </form>
+                <form>
+                    <select id="subject" name="subject">
                         <option value="inquiry">General inquiry</option>
                         <option value="abuse">Report user abuse issue</option>
                         <option value="forgot-password">Forgot password</option>
                         <option value="inquiry">Troubleshooting</option>
-                        </select>
-                    </form>
-                    <form id="message-label">
-                        <label for="message">Message</label>
-                    </form>
-                    
-                    <form>
-                        <textarea id="message" name="message" placeholder="How can we help you?" style="height:200px;"></textarea>
-                    </form>
-                    <div> 
-                        
-                    </div>
-                    <form>
-                        <input type="submit" class='button3' value="Submit">
-                    </form>
+                    </select>
+                </form>
+                <form id="message-label">
+                    <label for="message">Message</label>
+                </form>
+
+                <form>
+                    <textarea id="message" name="message" placeholder="How can we help you?"
+                              style="height:200px;"></textarea>
+                </form>
+                <div>
+
                 </div>
-                
+                <form>
+                    <input type="submit" class='button3' value="Submit">
+                </form>
             </div>
-            
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.2/jquery.min.js"></script>
-    <script src="/settings.js"></script>  
-  </body>
+
+        </div>
+    </div>
+</div>
+</body>
 </html>
